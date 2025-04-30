@@ -5,8 +5,8 @@ int n, ans;
 
 int solve(int n)
 {
-	int digit = 1;
-	int num = 1;
+	int digit, num;
+	digit = num = 1;
 	
     while(1) 
 	{
@@ -20,13 +20,9 @@ int solve(int n)
 
 int main() 
 {
-	ios::sync_with_stdio(false);
-	cin.tie(NULL); cout.tie(NULL);
-
-	while (!cin.eof())
+	while (scanf("%d", &n) != EOF)
 	{
-        cin >> n;
-        cout<<solve(n)<<'\n';
+        printf("%d\n", solve(n));
 	}
 	
 	return 0;
